@@ -53,7 +53,7 @@
     NSString *path = [bundle pathForResource:@"main" ofType:@"js"];
     NSString *script = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
     [WXSDKEngine initSDKEnvironment:script];
-    [WXLog setLogLevel:WXLogLevelDebug];
+    [WXLog setLogLevel:WeexLogLevelDebug];
     
     NSString *jsPath = [bundle pathForResource:@"testRootView" ofType:@"js"];
     NSString *jsScript = [NSString stringWithContentsOfFile:jsPath encoding:NSUTF8StringEncoding error:nil];
